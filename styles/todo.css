@@ -2,8 +2,8 @@
   grid-area: five;
   grid-column: 2;
   background: #b7cee8;
-  text-align: center;
   overflow: scroll;
+  text-align: center;
 }
 .things li {
 	padding: 10px 0;
