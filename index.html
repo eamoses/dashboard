@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/left-menu.css">
+    <link rel="stylesheet" href="styles/time.css">
+    <link rel="stylesheet" href="styles/weather.css">
+    <link rel="stylesheet" href="styles/date.css">
+    <link rel="stylesheet" href="styles/todo.css">
+    <link rel="stylesheet" href="styles/music.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <script src="https://use.fontawesome.com/467030ea8e.js"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <div id="dashboard-container" class="container">
+        <div class="leftside-menu">
+          <div class="user">
+            	<div id="greetingContainer">
+                  <div class="text">Please enter your full name</div>
+                  <input id="name" type="text">
+              </div>
+              <div id="greetingDisplay" class="greeting" style="display:none;"></div>
+          </div>
+          <nav class="menu" id="menu">
+            <li class="item active">home</li>
+            <li class="item">settings</li>
+            <li class="item">about</li>
+            <li class="item">contact</li>
+          </nav>
+        </div>
+        <div class="main-grid">
+          <div class="block one">
+            <div id="greeting" class="timeGreeting"></div>
+            <div id="time" class="time"></div>
+          </div>
+
+          <div class="block two">
+            <div id="weatherWidget" class="weatherWidget">93&deg;</div>
+            <div id="description" class="description">clear sky</div>
+            <div id="homeCity" class="homeCity">austin</div>
+          </div>
+
+          <div class="block three">
+              <div class="music"><p>now playing</p></div>
+              <div class="info">
+                <div class="progress-bar">
+                  <div class="time--current">1:25</div>
+                  <div class="time--total">-3:25</div>
+                  <div class="fill"></div>
+                </div>
+                <div class="currently-playing">
+                  <h2 class="song-name">Paris in the Rain</h2>
+                  <h3 class="artist-name">Lauv</h3>
+                </div>
+                <div class="controls">
+                  <div class="option"><i class="fas fa-bars"></i></div>
+                  <div class="volume"><i class="fas fa-volume-up"></i></div>
+                  <div class="previous"><i class="fas fa-backward"></i></div>
+                  <div class="play"><i class="fas fa-play"></i></div>
+                  <div class="next"><i class="fas fa-forward"></i></div>
+                  <div class="shuffle"><i class="fas fa-random"></i></div>
+                  <div class="add"><i class="fas fa-plus"></i></div>
+                </div>
+              </div>
+          </div>
+
+          <div class="block four">
+              <h1 id="date"></h1>
+              <p><a>go to settings to import google calendar</a></p>
+          </div>
+
+          <div class="block five">
+            <div class="reminders">
+              <p>to do</p>
+              <div class="reminder--btns" onclick="displayAddItem()">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+            </div>
+            <div class="reminders--list">
+              <ul id="listOfItemsID" class="things">
+              </ul>
+            </div>
+            <form id="formToAddItemsID" class="addItems" style="display:none;">
+                <input type="text" name="item" placeholder="What do you need to do today?" required>
+                <input type="submit" value="Add Item">
+            </form>
+          </div>
+
+        </div>
+      </div>
+      <script src="js/menu.js"></script>
+      <script src="js/calendar.js"></script>
+      <script src="js/greeting.js"></script>
+      <script src="js/time.js"></script>
+      <script src="js/todo.js"></script>
+      <script src="js/weather.js"></script>
+</body>
+</html>

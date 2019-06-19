@@ -1,0 +1,25 @@
+.two {
+    grid-area: two;
+    grid-column: 1;
+    background-color: #d8dbe2;
+}
+.homeCity {
+    color: #495867;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    text-align: center;
+}
+.description {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    text-align: center;
+}
+.weatherWidget {
+    color: #495867;
+    text-transform: uppercase;
+    font-size: 2.3em;
+    text-align: center;
+    margin-top: 20px;
+}
