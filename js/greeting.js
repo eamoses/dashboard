@@ -5,6 +5,9 @@
         greetingDisplay.innerHTML = `
             ${nameArray[0]}
         `;
+        greetingDisplayFirst.innerHTML = `
+            ${nameArray[0]}
+        `
         greetingContainer.style.display = 'none';
         greetingDisplay.style.display = 'block';
     }
