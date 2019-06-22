@@ -23,6 +23,10 @@ p {
   letter-spacing: 2px;
   font-size: 0.8em;
 }
+p a {
+  text-decoration: none;
+  color: #577399;
+}
 a {
   cursor: pointer;
   padding: 3px;

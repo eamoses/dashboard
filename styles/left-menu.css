@@ -6,6 +6,9 @@
     box-shadow: 2px 2px 15px rgba(73, 88, 103, .3);
     text-align: center;
 }
+#greetingContainer {
+    width: 90%;
+}
 .user {
     margin-top: 55%;
     margin-bottom: 25%;
@@ -28,6 +31,7 @@ input {
     background: transparent;
     font: 18px Avenir;
     border-bottom: 1px solid #495867;
+    width: 135px;
 }
 .text {
     color: #495867;
