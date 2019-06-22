@@ -36,5 +36,5 @@ function error() {
 if(!navigator.geolocation) {
     alert('For the love of all that is good, please cease use of Internet Explorer!');
 } else {
-    // navigator.geolocation.getCurrentPosition(success, error);
+    navigator.geolocation.getCurrentPosition(success, error);
 }
